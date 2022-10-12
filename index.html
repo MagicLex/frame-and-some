@@ -7,6 +7,8 @@
 	<title>Lex's Magic Click Machine</title>
 
 	<script>
+
+
 		function custom(){
 			var link = 
 			document.getElementById('findme').contentWindow.document.querySelectorAll("a[href*='featurestore.org']")[0];
@@ -22,15 +24,17 @@
 			padding: 0;
 			height: 100%;
 			overflow: hidden;
+
 		}
 		iframe {
+			z-index: 2;
 			display: block;
-			width: calc(100% - 40px);
-			height: calc(100% - 40px);
-			margin: 20px;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+
 		}
 		img {
-			position: absolute;
 			top: 0;
 			right: 0;
 		}
