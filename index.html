@@ -4,17 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="X-Frame-Bypass: Web Component extending IFrame to bypass X-Frame-Options: deny/sameorigin">
-	<title>Lex's Magic Click Machine</title>
+	<title>Lex's Magic Machine</title>
 
 	<script>
 
 
 		function custom(){
 			var link = 
-			document.getElementById('findme').contentWindow.document.querySelectorAll("a[href*='featurestore.org']")[0];
-			console.log(link); //show if the queryselector worked
-//		link.target = "";
-//		link.click()
+			document.getElementById('findme').contentWindow.document.querySelectorAll("a[href*='serverless-ml.org']")[0];
+//			console.log(link); //show if the queryselector worked
+		link.target = "";
+		link.click()
 }
 
 	</script>
@@ -43,6 +43,6 @@
 	<script src="x-frame-bypass.js" type="module"></script>
 </head>
 <body>
-	<iframe is="x-frame-bypass" id="findme" onload="custom()" src="https://www.google.com/search?q=feature store"></iframe>
+	<iframe is="x-frame-bypass" id="findme" onload="custom()" src="https://news.ycombinator.com/newest"></iframe>
 </body>
 </html>
